@@ -1,0 +1,110 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+a {
+  color: #82c936; }
+
+p {
+  color: #888; }
+
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
+  .bg_dark .s_descr::after {
+    background-color: #fff; }
+
+.bg_grey {
+  background-color: #82c936;
+  color: #FAFAFA; }
+  .bg_grey .s_descr::after {
+    background-color: #FAFAFA; }
+  .bg_grey p {
+    color: #FAFAFA; }
+
+.color_element {
+  color: #82c936; }
+
+.color_bg {
+  background-color: #82c936; }
+
+.color_border {
+  border-color: #82c936; }
+
+.main_color_bg {
+  background-color: #FAFAFA; }
+
+.toggle_mnu {
+  background-color: #82c936; }
+
+.top_mnu a:hover {
+  color: #82c936;
+  background-color: rgba(255, 255, 255, 0.1); }
+.top_mnu a {
+  letter-spacing: 4px; }
+
+.top_text {
+  color: #FAFAFA; }
+  .top_text h1 {
+    letter-spacing: 4px; }
+  .top_text p {
+    color: #FAFAFA;
+    letter-spacing: 1px; }
+
+.button_service {
+  letter-spacing: 1px; }
+  .button_service button {
+    background-color: #82c936;
+    border: none; }
+  .button_service button:hover {
+    color: #82c936;
+    background-color: #FAFAFA; }
+
+.s_descr::after {
+  background-color: #222; }
+
+.wrapper_about h1 {
+  color: #FAFAFA; }
+.wrapper_about p {
+  color: #FAFAFA; }
+.wrapper_about ul {
+  color: #FAFAFA; }
+
+.icon_round {
+  background: #82c936; }
+
+.contacts_icon {
+  color: #82c936; }
+
+.text_danger {
+  color: #82c936; }
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #82c936; }
+form input,
+form textarea {
+  letter-spacing: 2px; }
+form button {
+  background-color: #82c936;
+  letter-spacing: 2px; }
+form .form-group {
+  letter-spacing: 2px;
+  color: #888; }
+
+.main_footer {
+  color: #82c936; }
+
+.s_news li {
+  color: #888;
+  letter-spacing: 2px; }
+.s_news li.active {
+  color: #fff;
+  border-bottom: 1px solid #82c936; }
+
+.portfolio_item .port_item_cont a {
+  border-color: #82c936;
+  color: #82c936; }
