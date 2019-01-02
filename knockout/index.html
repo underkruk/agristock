@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seat Reservations</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+</head>
+<body>
+<h2>Your seat reservations</h2>
+
+<p data-bind="visible: availableSeats().length > 0">
+    <button class="btn btn-primary" data-bind="click: addSeat">Reserve any seat</button>
+</p>
+
+<p class="text-danger" data-bind="visible: availableSeats().length === 0">There are no available seats</p>
+
+<div class="seats_wrap" data-bind="foreach: availableSeats()">
+    <div class="item_seat" data-bind="click: $root.addSelectSeat">
+        <div data-bind="text: $data"></div>
+    </div>
+</div>
+
+<p>Seats left: <span data-bind="text: availableSeats().length"></span></p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Seat</th>
+        <th>Passenger name</th>
+        <th align="center">Meal</th>
+        <th align="center">Surcharge</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody data-bind="foreach: seats">
+    <tr>
+        <td align="center" data-bind="text: seat"></td>
+        <td data-bind="text: name"></td>
+        <td data-bind="text: meal().mealName"></td>
+        <td align="center" data-bind="text: meal().price"></td>
+        <td>
+            <a href="#" data-bind="click: $root.removeSeat" class="btn btn-danger">Remove</a>
+        </td>
+    </tr>
+    </tbody>
+    <thead>
+    <tr data-bind="visible: totalSurcharge() > 0">
+        <td colspan="3"><b>Total surcharge:</b></td>
+        <td>$<span data-bind="text: totalSurcharge().toFixed(2)"></span></td>
+        <td></td>
+    </tr>
+    </thead>
+</table>
+
+
+<script src="./js/main.js"></script>
+</body>
+</html>
