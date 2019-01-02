@@ -14,7 +14,7 @@
     //Methods
     h1.innerHTML = "<span>Document Object Model</span>";
     h1.attribute = "data-id";
-    h1.setAttribute('class', 'title');
+    h1.setAttribute('class', 'header');
     h1.style.color = "green";
     h1.style['background-color'] = "#f5f0f0";
     h1.style['padding'] = "20px";
@@ -45,7 +45,7 @@
 
     if(elementsByClassName.length > 0){
         for(var i=0; i< elementsByClassName.length; i++){
-            elementsByClassName[i].style['color'] = "yellow";
+            elementsByClassName[i].style['color'] = "blue";
         }
     }
 
@@ -65,7 +65,9 @@
         console.log('mouse out');
     });
 
-
+    document.getElementById('moveByDiagonal').addEventListener('click', function(){
+        moveChildFigure('moveByDiagonal');
+    });
 
     document.getElementById('moveByWidth').addEventListener('click', function(){
         moveChildFigure('moveByWidth');
@@ -104,6 +106,7 @@
                         left = pos + 'px';
                         break;
                     default:
+                        clearInterval(id);
                         top = '0px';
                         left = '0px';
                 }
@@ -112,6 +115,27 @@
             }
         }
     }
+
+    //change input
+    var inputChange = document.getElementById('inputChange'),
+        result = document.getElementById('result');
+    document.getElementById('clearText').addEventListener('click', function(){
+        inputChange.value = '';
+        result.innerText = '';
+    });
+
+    inputChange.addEventListener('change', function(){
+        result.innerText = event.target.value;
+    });
+
+    inputChange.addEventListener('focus', function(){
+        var node = event.target;
+            node.style.background = 'grey';
+    });
+
+    window.addEventListener("resize", function(){
+        console.log(event.currentTarget.innerHeight,event.currentTarget.innerWidth );
+    });
 
     //javascript events
 
