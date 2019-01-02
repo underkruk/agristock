@@ -25,32 +25,32 @@
 
 <table>
     <thead>
-    <tr>
-        <th>Seat</th>
-        <th>Passenger name</th>
-        <th align="center">Meal</th>
-        <th align="center">Surcharge</th>
-        <th></th>
-    </tr>
+        <tr>
+            <th>Seat</th>
+            <th>Passenger name</th>
+            <th align="center">Meal</th>
+            <th align="center">Surcharge</th>
+            <th></th>
+        </tr>
     </thead>
     <tbody data-bind="foreach: seats">
-    <tr>
-        <td align="center" data-bind="text: seat"></td>
-        <td data-bind="text: name"></td>
-        <td data-bind="text: meal().mealName"></td>
-        <td align="center" data-bind="text: meal().price"></td>
-        <td>
-            <a href="#" data-bind="click: $root.removeSeat" class="btn btn-danger">Remove</a>
-        </td>
-    </tr>
+        <tr>
+            <td align="center" data-bind="text: seat"></td>
+            <td data-bind="text: name"></td>
+            <td data-bind="text: meal().mealName"></td>
+            <td align="center" data-bind="text: meal().price"></td>
+            <td>
+                <a href="#" data-bind="click: $root.removeSeat" class="btn btn-danger">Remove</a>
+            </td>
+        </tr>
     </tbody>
-    <thead>
-    <tr data-bind="visible: totalSurcharge() > 0">
-        <td colspan="3"><b>Total surcharge:</b></td>
-        <td>$<span data-bind="text: totalSurcharge().toFixed(2)"></span></td>
-        <td></td>
-    </tr>
-    </thead>
+    <tfoot>
+        <tr data-bind="visible: totalSurcharge() > 0">
+            <td colspan="3"><b>Total surcharge:</b></td>
+            <td>$<span data-bind="text: totalSurcharge().toFixed(2)"></span></td>
+            <td></td>
+        </tr>
+    </tfoot>
 </table>
 
 
