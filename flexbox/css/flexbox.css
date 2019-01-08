@@ -1,0 +1,140 @@
+.flex-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.flex-container .element-1{
+    order: 1;
+}
+.flex-container .element-2{
+    order: 2;
+}
+.flex-container .element-6{
+    order: -1;
+}
+
+.flex-container .flex-element{
+    flex-grow: 1;
+}
+
+.flex-container .element-4,
+.flex-container .element-3 {
+    flex-grow: 2;
+}
+
+
+.flex-container-shrink-element{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.flex-container-shrink-element .flex-element{
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+
+
+.flex-container-justify_space_between{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*flex-start | flex-end | center | space-between | space-around*/
+}
+
+.flex-container-justify_space_around{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*flex-start | flex-end | center | space-between | space-around*/
+}
+.flex-container-justify_space_around_margin{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*flex-start | flex-end | center | space-between | space-around*/
+}
+.flex-container-justify_space_around_margin .flex-element:first-child{
+    margin-right:auto;
+}
+
+.flex-container-justify_space_around_margin .flex-element:last-child{
+    margin-left:auto;
+}
+
+.flex-container-justify_space_around_margin .flex-element:nth-child(4){
+    margin:auto;
+}
+
+.flex-container-inline{
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container-direction_row_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container-direction_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-direction_column_reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex-container-align-items{
+    display:flex;
+    flex-wrap: wrap;
+    height: 400px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flex-container-align-items .flex-element{
+    order: 0;
+    flex-grow: 1;
+    width:250px;
+}
+.flex-container-align-items .element-1{
+    align-self: flex-start;
+}
+.flex-container-align-items .element-3,
+.flex-container-align-items .element-4{
+    align-self: center;
+}
+.flex-container-align-items .element-6{
+    align-self: flex-end;
+}
+
+.flex-container-align-content{
+    display:flex;
+    flex-wrap: wrap;
+    height: 400px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.flex-container-align-content .flex-element{
+    order: 0;
+    flex-grow: 1;
+    width:100px;
+}
+
+.flex-container-example-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*.flex-container-example-center .element-1{*/
+    /*align-self:center;*/
+    /*margin:auto;*/
+/*}*/
+
+.flex-container-example-center .element-1:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

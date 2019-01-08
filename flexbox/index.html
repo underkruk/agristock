@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" type="text/css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet"  href="css/flexbox.css">
+</head>
+<body>
+
+
+
+    <h1>Flexbox</h1>
+
+    <ul>
+        <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A guide to flexbox (en)</a></li>
+        <li><a href="https://frontender.info/a-guide-to-flexbox/">A guide to flexbox (ru)</a></li>
+    </ul>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">flex-wrap:</span> wrap</h3>
+        <h3><span class="css-attr">order:</span> -1 (for element 6)</h3>
+        <h3><span class="css-attr">flex-grow:</span> 2 (for element 4)</h3>
+        <div class="container flex-container">
+            <div class="item-element flex-element element-1">1</div>
+            <div class="item-element flex-element element-2">2</div>
+            <div class="item-element flex-element element-3">3</div>
+            <div class="item-element flex-element element-4">4</div>
+            <div class="item-element flex-element element-5">5</div>
+            <div class="item-element flex-element element-6">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">flex-grow:</span> 1</h3>
+        <h3><span class="css-attr">flex-basis:</span> 200px</h3>
+        <div class="container flex-container-shrink-element">
+            <div class="item-element flex-element element-1">1</div>
+            <div class="item-element flex-element element-2">2</div>
+            <div class="item-element flex-element element-3">3</div>
+            <div class="item-element flex-element element-4">4</div>
+            <div class="item-element flex-element element-5">5</div>
+            <div class="item-element flex-element element-6">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">flex-wrap:</span> wrap</h3>
+        <h3><span class="css-attr">justify-content:</span> space-between</h3>
+        <div class="container flex-container-justify_space_between">
+            <div class="item-element flex-element">1</div>
+            <div class="item-element flex-element">2</div>
+            <div class="item-element flex-element">3</div>
+            <div class="item-element flex-element">4</div>
+            <div class="item-element flex-element">5</div>
+            <div class="item-element flex-element">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">flex-wrap:</span> wrap</h3>
+        <h3><span class="css-attr">justify-content:</span> space-around</h3>
+        <div class="container flex-container-justify_space_around">
+            <div class="item-element flex-element">1</div>
+            <div class="item-element flex-element">2</div>
+            <div class="item-element flex-element">3</div>
+            <div class="item-element flex-element">4</div>
+            <div class="item-element flex-element">5</div>
+            <div class="item-element flex-element">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">flex-wrap:</span> wrap</h3>
+        <h3><span class="css-attr">justify-content:</span> space-around</h3>
+        <div class="container flex-container-justify_space_around_margin">
+            <div class="item-element flex-element">1</div>
+            <div class="item-element flex-element">2</div>
+            <div class="item-element flex-element">3</div>
+            <div class="item-element flex-element">4</div>
+            <div class="item-element flex-element">5</div>
+            <div class="item-element flex-element">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> inline-flex</h3>
+        <h3><span class="css-attr">flex-wrap:</span> wrap-reverse</h3>
+        <div class="container flex-container-inline">
+            <div class="item-element flex-element">1</div>
+            <div class="item-element flex-element">2</div>
+            <div class="item-element flex-element">3</div>
+            <div class="item-element flex-element">4</div>
+            <div class="item-element flex-element">5</div>
+            <div class="item-element flex-element">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">flex-direction:</span> row-reverse</h3>
+        <div class="container flex-container-direction_row_reverse">
+            <div class="item-element flex-element">1</div>
+            <div class="item-element flex-element">2</div>
+            <div class="item-element flex-element">3</div>
+            <div class="item-element flex-element">4</div>
+            <div class="item-element flex-element">5</div>
+            <div class="item-element flex-element">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">flex-direction:</span> column</h3>
+        <div class="container flex-container-direction_column">
+            <div class="item-element flex-element">1</div>
+            <div class="item-element flex-element">2</div>
+            <div class="item-element flex-element">3</div>
+            <div class="item-element flex-element">4</div>
+            <div class="item-element flex-element">5</div>
+            <div class="item-element flex-element">6</div>
+        </div>
+    </div>
+    <div class="flex-example">
+        <h3><span class="css-attr">flex-direction:</span> column-reverse</h3>
+        <div class="container flex-container-direction_column_reverse">
+            <div class="item-element flex-element">1</div>
+            <div class="item-element flex-element">2</div>
+            <div class="item-element flex-element">3</div>
+            <div class="item-element flex-element">4</div>
+            <div class="item-element flex-element">5</div>
+            <div class="item-element flex-element">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">align-items:</span> stretch</h3>
+        <div class="container flex-container-align-items">
+            <div class="item-element flex-element element-1">1 (align-self: flex-start)</div>
+            <div class="item-element flex-element element-2">2</div>
+            <div class="item-element flex-element element-3">3 (align-self: center)</div>
+            <div class="item-element flex-element element-4">4 (align-self: center)</div>
+            <div class="item-element flex-element element-5">5</div>
+            <div class="item-element flex-element element-6">6 (align-self: flex-end)</div>
+        </div>
+    </div>
+
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">align-content:</span> flex-start</h3>
+        <div class="container flex-container-align-content">
+            <div class="item-element flex-element element-1">1</div>
+            <div class="item-element flex-element element-2">2</div>
+            <div class="item-element flex-element element-3">3</div>
+            <div class="item-element flex-element element-4">4</div>
+            <div class="item-element flex-element element-5">5</div>
+            <div class="item-element flex-element element-6">6</div>
+        </div>
+    </div>
+
+    <div class="flex-example">
+        <h3><span class="css-attr">display:</span> flex</h3>
+        <h3><span class="css-attr">justify-center:</span> center</h3>
+        <h3><span class="css-attr">align-items:</span> center</h3>
+        <div class="container flex-container-example-center">
+            <div class="item-element flex-element element-1">Я люблю быть в центре</div>
+        </div>
+    </div>
+</body>
+</html>
