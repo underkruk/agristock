@@ -50,8 +50,8 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-    $(".loader_inner").fadeOut();
-    $(".loader").delay(400).fadeOut("slow");
+//     $(".loader_inner").fadeOut();
+//     $(".loader").delay(400).fadeOut("slow");
     $(".top_text h1").animated("fadeInDown","fadeOutUp");
     $(".top_text p, .section_header").animated("fadeInUp","fadeOutDown");
     $(".wrap_button_service_right").animated("fadeInRight","fadeOutRight");
